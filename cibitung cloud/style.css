@@ -1,0 +1,320 @@
+* {
+    padding : 0 ;
+    margin : 0 ;
+    font-family: 'Staatliches', cursive;
+}
+
+/* container */
+
+.container {
+    width : 100% ;
+}
+
+.content {
+    background-image: url(mars.png);
+    background-size: cover ;
+    width : 100% ;
+    height : 500px ;
+    margin-top: 50px ;
+    color : #51cafd ;
+    border-bottom :  #1181b2 4px solid ;
+}
+
+.content h1 {
+    padding-top: 20px ;
+    text-align: center ;
+    font-size: 40px ;
+
+}
+
+.content p {
+    padding-top : 15px ;
+    text-align: center ;
+    font-size: 30px ;
+}
+
+.tombol {
+    justify-content: space-around ;
+    display: flex  ;
+    
+}
+
+.tombol button {
+    padding : 20px 70px  ;
+    border : none ;
+    background-color: #1181b2 ;
+    border-radius: 20px 20px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7) ;
+}
+
+.tombol button:hover {
+    transition: 0.5s ;
+    background-color : #00b3ff ;
+    box-shadow: none ;
+}
+
+
+.about {
+    margin-top: 10px ;
+    text-align: center ;
+    display: grid ;
+    grid-column: 0.5fr 1fr ;
+    grid-template-areas: "gambar judul" "gambar isi";
+}
+
+.about img {
+    grid-area: gambar ;
+    margin-top: 20px ;
+    margin-left: 10px ;
+    margin-bottom: 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.about h1 {
+    grid-area: judul ;
+    font-size: 25px ;   
+}
+
+.about p {
+    grid-area: isi ; ;
+    font-size: 18px ;
+    margin-left : 10px ;
+    margin-right : 10px ;
+    margin-top: -40px ;
+}
+
+.kartu {
+    display : grid  ;
+    grid-template-columns : 0.5fr  0.5fr  0.5fr  0.5fr ;
+    text-align: center ;
+    margin-bottom : 20px ;
+    grid-template-areas: "judul judul judul judul judul" "card-a card-b card-c card-d card-e";
+}
+
+.kartu h1 {
+    grid-area: judul ;
+    font-size: 30px ;
+    margin-bottom: 10px ;
+}
+
+.layanan-a   {
+    grid-area: card-a ;
+    width : 200px ;
+    height : 200px ;
+    background-color: #4fa8c2 ;
+    border-radius: 20px 20px 20px 20px ;
+    margin-left: 10px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.layanan-a img , .layanan-b img , .layanan-c img ,.layanan-d img ,.layanan-e img {
+    width : 200px ;
+    height : 170px ;
+    border-radius: 20px 20px 0px 0px   ;
+}
+
+.layanan-b {
+   
+    grid-area: card-b ;
+    width : 200px ;
+    height : 200px ;
+    background-color: #4fa8c2 ;
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+}
+
+.layanan-c {
+   
+    grid-area: card-c ;
+    width : 200px ;
+    height : 200px ;
+    background-color: #4fa8c2 ;
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.layanan-d {
+   
+    grid-area: card-d ;
+    width : 200px ;
+    height : 200px ;
+    background-color: #4fa8c2 ;
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.layanan-e {
+   
+    grid-area: card-e ;
+    width : 200px ;
+    height : 200px ;
+    background-color: #4fa8c2 ;
+    border-radius: 20px 20px 20px 20px ;
+    margin-right: 10px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.layanan-a a,.layanan-b a,.layanan-c a,.layanan-d a,.layanan-e a {
+    text-decoration: none ;
+    color : black ;
+    transition: 1s ;
+}
+
+.layanan-a a:hover ,.layanan-b a:hover,.layanan-c a:hover,.layanan-d a:hover,.layanan-e a:hover {
+    text-decoration: none ;
+    color : white ;
+}
+
+
+.content-b {
+    text-align: center ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.dalam-content-b {
+    flex-direction: row ;
+    display: flex ;
+    flex-wrap: wrap ;
+    width : 35% ;
+    margin: auto ;
+}
+
+.test-a  {
+    flex : 1 ;
+    padding-bottom : 10px ;
+}
+
+.test-b {
+    flex : 1 ;
+}
+
+.test-c {
+    flex : 1 ;
+}
+
+.test-d {
+    flex : 1 ;
+}
+
+
+.content-b img {
+    padding-bottom: 20px ;
+    border-radius: 10px 10px 200px 200px   ;
+}
+
+/* footer */
+
+footer {
+    background-color:  #1181b2 ;
+}
+
+footer p {
+    text-align: center ;
+    padding-top : 10px ;
+    margin-bottom: -5px ;
+    color : black ;
+}
+
+footer i {
+    padding : 0 8px ;
+}
+
+.icon {
+    margin-left: 45% ;
+}
+
+.icon i {
+    text-align: center ;
+    display: inline-block ; 
+    padding-left : 20px ;
+    color : black ;
+    margin-bottom: 10px ;
+}
+
+/* utilites */
+
+.warna ,.warna a {
+    background-color: #1181b2 ;
+    color : black ;
+}
+
+.tombol-nav:hover {
+    background-color: #00b3ff ;
+    border-radius: 20px ;
+    transition: 0.5s ;
+    /* transform: rotate(360deg); */
+}
+
+
+/* responsive */
+
+@media only screen and (max-width : 500px ) {
+
+    .content {
+        width : 100% ;
+        height : 400px ;
+    }
+
+    .tombol button {
+        padding : 10px 40px ;
+    }
+
+    .content h1  {
+        font-size : 30px ;
+    }
+
+    .content p  {
+        font-size : 25px ;
+    }
+
+    .about h1 {
+        font-size: 20px ;   
+    }
+
+    .about p {
+        font-size: 15px ;
+    }
+    
+    .about {
+        grid-template-areas: "judul judul" "gambar gambar" "isi isi";
+    }
+
+    .about img {
+        margin : 20px auto ;
+    }
+    .about p {
+        margin-top: 0px ;
+        text-align: justify ;
+        padding : 0 10px ;
+    }
+
+    .kartu {
+        grid-template-columns: 1fr ;
+        grid-row-gap: 20px ;
+        justify-items: center ;
+        grid-template-areas: "judul" "card-a" "card-b" "card-c" "card-d" "card-e";
+    }
+
+    .layanan-a {
+        margin : 0 ;
+    }
+
+    .layanan-e {
+        margin : 0 ;
+    }
+
+    .icon {
+        margin-left: 30% ;
+    }
+
+    .content-b h1 {
+        font-size : 35px ;
+    }
+
+    .dalam-content-b {
+        width : 50% ;
+        justify-content: center ;
+    }
+
+}
