@@ -316,5 +316,10 @@ footer i {
         width : 50% ;
         justify-content: center ;
     }
+    .tombol-nav:hover {
+        background-color : none ;
+        border-radius : none ;
+    }
+    
 
 }
