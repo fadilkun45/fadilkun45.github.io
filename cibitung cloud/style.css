@@ -239,14 +239,6 @@ footer i {
     color : black ;
 }
 
-.tombol-nav:hover {
-    background-color: #00b3ff ;
-    border-radius: 20px ;
-    transition: 0.5s ;
-    /* transform: rotate(360deg); */
-}
-
-
 /* responsive */
 
 @media only screen and (max-width : 500px ) {
@@ -322,4 +314,14 @@ footer i {
     }
     
 
+}
+
+@media only screen and (min-width : 500px ){
+    .tombol-nav:hover {
+    background-color: #00b3ff ;
+    border-radius: 20px ;
+    transition: 0.5s ;
+    /* transform: rotate(360deg); */
+}
+    
 }
