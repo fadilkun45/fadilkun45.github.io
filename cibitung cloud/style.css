@@ -11,12 +11,11 @@
 }
 
 .content {
-    background-image: url(mars.png);
-    background-size: cover ;
+    background-color: #2d6187 ;
     width : 100% ;
-    height : 500px ;
+    height : 300px ;
     margin-top: 50px ;
-    color : #51cafd ;
+    color : whitex  ;
     border-bottom :  #1181b2 4px solid ;
 }
 
@@ -42,17 +41,17 @@
 .tombol button {
     padding : 20px 70px  ;
     border : none ;
-    background-color: #1181b2 ;
+    background-color: #28abb9 ;
     border-radius: 20px 20px ;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7) ;
+    box-shadow: 0 6px 2px 2px rgba(0, 0, 0, 0.3) ;
 }
 
 .tombol button:hover {
     transition: 0.5s ;
     background-color : #00b3ff ;
     box-shadow: none ;
+    
 }
-
 
 .about {
     margin-top: 10px ;
@@ -101,7 +100,7 @@
     grid-area: card-a ;
     width : 200px ;
     height : 200px ;
-    background-color: #4fa8c2 ;
+    background-color: #28abb9 ;
     border-radius: 20px 20px 20px 20px ;
     margin-left: 10px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
@@ -118,7 +117,7 @@
     grid-area: card-b ;
     width : 200px ;
     height : 200px ;
-    background-color: #4fa8c2 ;
+    background-color:  #28abb9 ;
     border-radius: 20px 20px 20px 20px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
 }
@@ -128,7 +127,7 @@
     grid-area: card-c ;
     width : 200px ;
     height : 200px ;
-    background-color: #4fa8c2 ;
+    background-color:  #28abb9 ;
     border-radius: 20px 20px 20px 20px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
 }
@@ -138,7 +137,7 @@
     grid-area: card-d ;
     width : 200px ;
     height : 200px ;
-    background-color: #4fa8c2 ;
+    background-color:  #28abb9 ;
     border-radius: 20px 20px 20px 20px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
 }
@@ -148,7 +147,7 @@
     grid-area: card-e ;
     width : 200px ;
     height : 200px ;
-    background-color: #4fa8c2 ;
+    background-color:  #28abb9 ;
     border-radius: 20px 20px 20px 20px ;
     margin-right: 10px ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) ;
@@ -206,7 +205,7 @@
 /* footer */
 
 footer {
-    background-color:  #1181b2 ;
+    background-color: #28abb9 ;
 }
 
 footer p {
@@ -235,17 +234,44 @@ footer i {
 /* utilites */
 
 .warna ,.warna a {
-    background-color: #1181b2 ;
+    background-color: #28abb9 ;
     color : black ;
 }
 
+
 /* responsive */
 
-@media only screen and (max-width : 500px ) {
+@media only screen and (max-width : 1100px ){
+
+    .layanan-a,.layanan-b,.layanan-c,.layanan-d,.layanan-e{
+        width : 150px ;
+        height : 150px ;
+    }
+
+    .layanan-a img,.layanan-b img,.layanan-c img,.layanan-d img,.layanan-e img {
+        width : 150px ;
+        height : 120px ;
+    }
+
+
+    .about h1 {
+        margin-bottom: 40px ;
+    }
+
+  
+}
+
+
+
+@media only screen and (max-width : 700px ) {
 
     .content {
         width : 100% ;
         height : 400px ;
+    }
+
+    .about h1 {
+        margin-bottom : -10px ;
     }
 
     .tombol button {
@@ -282,7 +308,7 @@ footer i {
     }
 
     .kartu {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr 0fr;
         grid-row-gap: 20px ;
         justify-items: center ;
         grid-template-areas: "judul" "card-a" "card-b" "card-c" "card-d" "card-e";
@@ -296,6 +322,16 @@ footer i {
         margin : 0 ;
     }
 
+    .layanan-a,.layanan-b,.layanan-c,.layanan-d,.layanan-e{
+        width : 200px ! important ;
+        height : 200px ! important ; 
+    }
+
+    .layanan-a img,.layanan-b img,.layanan-c img,.layanan-d img,.layanan-e img {
+        width : 200px ;
+        height : 170px ;
+    }
+
     .icon {
         margin-left: 30% ;
     }
@@ -305,23 +341,20 @@ footer i {
     }
 
     .dalam-content-b {
-        width : 50% ;
+        width : 20% ;
         justify-content: center ;
+        row-gap: 10px ;
     }
-    .tombol-nav:hover {
-        background-color : none ;
-        border-radius : none ;
-    }
-    
 
 }
 
-@media only screen and (min-width : 800px ){
+@media only screen and (min-width : 1000px ){
     .tombol-nav:hover {
         background-color: #00b3ff ;
-        border-radius: 20px ;
-        transition: 0.5s ;
+        border-radius: 15px ;
+        transition: 0.2s ;
         /* transform: rotate(360deg); */
+        
     }
+
 }
-    
