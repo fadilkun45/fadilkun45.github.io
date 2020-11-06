@@ -1,7 +1,7 @@
 * {
     padding : 0 ;
     margin : 0 ;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 /* container */
@@ -176,26 +176,90 @@
     display: flex ;
     flex-wrap: wrap ;
     width : 35% ;
-    margin: auto ;
+    margin: auto ; 
+}
+
+.content-b h1 {
+    font-size: 30px  ;
 }
 
 .test-a  {
     flex : 1 ;
     padding-bottom : 10px ;
+    font-weight: bold ;
 }
 
 .test-b {
     flex : 1 ;
+    font-weight: bold ;
 }
 
 .test-c {
     flex : 1 ;
+    font-weight: bold ;
 }
 
 .test-d {
     flex : 1 ;
+    font-weight: bold ;
 }
 
+/* section berita */
+
+.berita {
+    display : flex ;
+    flex-direction: column ;
+    text-align: center ;
+    margin : auto ;
+    width : 500px ;
+    margin-bottom: 20px ;
+}
+
+.berita h3 {
+    font-size: 20px ;
+    padding : 15px 0 ;
+    text-align: center ;
+    border-bottom: black 1px solid ;
+    border-top : black 1px solid ;
+}
+
+/* kotak berita */
+
+.kotak {
+    width : 500px ;
+    height: 200px ;
+    grid-template-areas: "gambar judul" "gambar isi";
+    column-gap: 10px ;
+    display: grid ;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2) ;
+    text-align: left ;
+    margin : 15px 0 ;
+    border-radius: 15px ;
+    word-spacing: -1px ;
+    background-color: rgb(245, 244, 244) ;
+}
+
+.kotak img {
+    width : 180px ;
+    height: 170px ;
+    grid-area: gambar ;
+    margin : 10px 10px ;
+    border-radius: 20px ;
+}
+
+.kotak a {
+    font-size: 20px ;
+    grid-area: judul ;
+    margin : 10px 10px ;
+    text-decoration: none ;
+}
+
+.kotak p {
+    grid-area: isi ;
+    font-size: 15px ;
+    margin : 0px 10px ;
+    margin-top: -30px ;
+}
 
 .content-b img {
     padding-bottom: 20px ;
@@ -236,6 +300,10 @@ footer i {
 .warna ,.warna a {
     background-color: #28abb9 ;
     color : black ;
+}
+
+.warna-pink {
+    color : rgb(255, 163, 179) ;
 }
 
 
@@ -333,7 +401,7 @@ footer i {
     }
 
     .icon {
-        margin-left: 30% ;
+       margin : 0 34% ;
     }
 
     .content-b h1 {
@@ -344,6 +412,35 @@ footer i {
         width : 20% ;
         justify-content: center ;
         row-gap: 10px ;
+    }
+
+    .berita {
+        width : 350px ;
+    }
+
+    .kotak {
+        width: 350px ;
+        height : 230px ;
+        opacity: 0.8 ;
+    }
+
+    .kotak img {
+        margin-top : 35px ;
+        width : 145px ;
+        height : 150px ;
+    }
+
+    .kotak a {
+        font-size: 18px ;
+    }
+
+    .kotak p {
+        font-size: 12px ;
+        margin-top: -10px ;
+    }
+
+    .kotak:hover {
+        opacity : 1 ;
     }
 
 }
