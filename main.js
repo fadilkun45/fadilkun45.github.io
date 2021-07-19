@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       document.documentElement.classList.toggle("dark");
       rendertoggle.innerHTML = '<img src="img/night_mode_icon.svg">'
       imgHeroRender.innerHTML = `<img src="img/hero_down_dark.svg" class=" transform translate-y-1
-        md:-translate-y-28  lg:-translate-y-36 relative z-10">`
+         lg:-translate-y-36 relative z-10">`
       imgcvrender.innerHTML =`<div class="img-cv-icon-render">
       <img src="img/download_icon_dark.svg" class="mr-2">`
     } else {
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         window.localStorage.setItem("mode45", "dark");
 
         imgHeroRender.innerHTML = `<img src="img/hero_down_dark.svg" class=" transform translate-y-1
-        md:-translate-y-28  lg:-translate-y-36 relative z-10">`
+         lg:-translate-y-36 relative z-10">`
 
         imgcvrender.innerHTML =`<div class="img-cv-icon-render">
         <img src="img/download_icon_dark.svg" class="mr-2">`
@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         console.log(window.localStorage.mode45);
 
         imgHeroRender.innerHTML = `<img src="img/hero_down_bg.svg" class=" transform translate-y-1
-        md:-translate-y-28  lg:-translate-y-36 relative z-10">`
+         lg:-translate-y-36 relative z-10">`
 
         imgcvrender.innerHTML =`<div class="img-cv-icon-render">
         <img src="img/download_icon_btn.svg" class="mr-2">`
@@ -70,18 +70,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   window.addEventListener('resize', function(){
      // ketika navMobile di klik
-    if(document.documentElement.clientWidth < 660 ){
-      navitem.forEach((NavItem) => {
-        NavItem.addEventListener('click', function(){
-          document.body.classList.toggle('overflow-hidden');
-          navlink.classList.toggle("hidden");
-          closeToggle.classList.toggle("hidden");
-          openToggle.classList.toggle("hidden");
-        })
-      })
+      location.reload()
     }
-  }
-);
+  );
+
+if(document.documentElement.clientWidth < 660 ){
+  navitem.forEach((NavItem) => {
+    NavItem.addEventListener('click', function(){
+      document.body.classList.toggle('overflow-hidden');
+      navlink.classList.toggle("hidden");
+      closeToggle.classList.toggle("hidden");
+      openToggle.classList.toggle("hidden");
+    })
+  })
+}
 
  
 
