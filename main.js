@@ -68,11 +68,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   let navitem = document.querySelectorAll(".nav-right a")
 
 
-  window.addEventListener('resize', function(){
-     // ketika navMobile di klik
-      location.reload()
-    }
-  );
+
 
 if(document.documentElement.clientWidth < 660 ){
   navitem.forEach((NavItem) => {
@@ -85,7 +81,6 @@ if(document.documentElement.clientWidth < 660 ){
   })
 }
 
- 
 
   
   window.addEventListener('scroll',function(){
