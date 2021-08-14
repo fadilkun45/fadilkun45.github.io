@@ -49,7 +49,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
 
   // aos
-  AOS.init();
+  AOS.init({
+    once: true
+  });
   
   // toggle mobile
 
