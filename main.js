@@ -89,7 +89,7 @@ if(document.documentElement.clientWidth < 660 ){
     let navbar = document.querySelector('nav');
     navbar.classList.toggle('sticky',window.scrollY > 300)
     navbar.classList.toggle('top-0',window.scrollY > 300)
-    console.log("tes")
+//     console.log("tes")
   })
   
 let home = document.querySelector("#home");
